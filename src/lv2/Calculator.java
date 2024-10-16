@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Calculator {
 //
-    private ArrayList<Integer> results = new ArrayList<Integer>();
+    private ArrayList<Integer> results = new ArrayList<>();
 
 //    getter
     public ArrayList<Integer> getResult() {
@@ -18,7 +18,7 @@ public class Calculator {
 
 //    result의 가장 첫번째 원소 삭제
     public void removeResult() {
-        if(this.results.size() > 0) {
+        if(!this.results.isEmpty()) {
             this.results.removeFirst();
         }
     }
