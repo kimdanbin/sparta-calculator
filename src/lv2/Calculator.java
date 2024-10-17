@@ -1,6 +1,7 @@
 package lv2;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Calculator {
 //
@@ -38,8 +39,10 @@ public class Calculator {
                 if (num2 != 0) {
                     this.results.add(num1 / num2);
                 } else {
-                    results.add(0);
                     System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+                    System.out.print("두 번째 숫자를 입력하세요: ");
+                    num2 = new Scanner(System.in).nextInt();
+                    calculate(num1, num2, '/');
                 }
                 break;
             default:
